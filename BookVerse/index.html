@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookVerse</title>
+    <link rel="icon" type="image/png" href="images/fevicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="BookVerse Logo">
+            <h1>BookVerse</h1>
+        </div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Books</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="header-right">
+    <input type="text" placeholder="Search books..." id="search-bar">
+    <a href="#" class="cart">
+        <i class="fa-solid fa-book"></i>
+        <span class="cart-text">My Next Reads</span>
+    </a>
+</div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover Your Next Favorite Book</h2>
+            <p>Explore our curated collection of timeless classics and modern stories.</p>
+        </div>
+    </section>
+
+    <!-- Book Section -->
+    <section class="book-section">
+        <h2>Top Rated Reads</h2>
+        <div class="book-container">
+            <!-- Book Cards -->
+            <div class="book-card" data-description="A timeless romance exploring manners, upbringing, morality, and marriage in early 19th century England.">
+                <img src="images/pride-and-prejudice.jpg" alt="Pride and Prejudice">
+                <div class="book-info">
+                <h3>Pride and Prejudice</h3>
+                <p>Jane Austen</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A glamorous and heartbreaking tale of love, ambition, and secrets through the life of Hollywood icon Evelyn Hugo.">
+                <img src="images/seven-husbands-evelyn-hugo.jpg" alt="The Seven Husbands of Evelyn Hugo">
+                <div class="book-info">
+                <h3>The Seven Husbands of Evelyn Hugo</h3>
+                <p>Taylor Jenkins Reid</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A touching love story about two people whose lives change after an accident forces them to redefine happiness.">
+                <img src="images/me-before-you.jpg" alt="Me Before You">
+                <div class="book-info">
+                <h3>Me Before You</h3>
+                <p>Jojo Moyes</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A heart-wrenching romance between two teenagers living with cancer, exploring love, loss, and hope.">
+                <img src="images/fault-in-our-stars.jpg" alt="The Fault in Our Stars">
+                <div class="book-info">
+                <h3>The Fault in Our Stars</h3>
+                <p>John Green</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A romantic fantasy where a powerless girl is entangled with a powerful prince in a dangerous world.">
+                <img src="images/powerless.jpg" alt="Powerless">
+                <div class="book-info">
+                <h3>Powerless</h3>
+                <p>Lauren Roberts</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A magical tale of love, curses, and broken promises set in a whimsical, enchanting world.">
+                <img src="images/once-upon-a-broken-heart.jpg" alt="Once Upon a Broken Heart">
+                <div class="book-info">
+                <h3>Once Upon a Broken Heart</h3>
+                <p>Stephanie Garber</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A gripping psychological thriller about a woman who refuses to speak after allegedly killing her husband.">
+                <img src="images/silent-patient.jpg" alt="The Silent Patient">
+                <div class="book-info">
+                <h3>The Silent Patient</h3>
+                <p>Alex Michaelides</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A romance that transcends lifetimes, where two souls are bound together by fate across different eras.">
+                <img src="images/touch-of-eternity.jpg" alt="A Touch of Eternity">
+                <div class="book-info">
+                <h3>A Touch of Eternity</h3>
+                <p>Durjoy Datta</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A suspenseful mystery about a couple who arrive at a remote house only to discover chilling secrets.">
+                <img src="images/never-lie.jpg" alt="Never Lie">
+                <div class="book-info">
+                <h3>Never Lie</h3>
+                <p>Freida McFadden</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A twisting thriller where both sides of a murder investigation tell conflicting and disturbing stories.">
+                <img src="images/his-and-hers.jpg" alt="His and Hers">
+                <div class="book-info">
+                <h3>His and Hers</h3>
+                <p>Alice Feeney</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A chilling mystery involving a young girl, her babysitter, and strange hidden messages in family photos.">
+                <img src="images/hidden-pictures.jpg" alt="Hidden Pictures">
+                <div class="book-info">
+                <h3>Hidden Pictures</h3>
+                <p>Jason Rekulak</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A thrilling puzzle-filled mystery where an heiress leaves her fortune to a stranger instead of her family.">
+                <img src="images/inheritance-games.jpg" alt="The Inheritance Games">
+                <div class="book-info">
+                <h3>The Inheritance Games</h3>
+                <p>Jennifer Lynn Barnes</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A dystopian romance about a girl whose deadly touch makes her the most dangerous weapon in a broken world.">
+                <img src="images/shatter-me.jpg" alt="Shatter Me">
+                <div class="book-info">
+                <h3>Shatter Me</h3>
+                <p>Tahereh Mafi</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A lighthearted and charming YA romance about a girl determined to win over her lifelong crush with the help of his annoying best friend.">
+                <img src="images/better-than-the-movies.jpg" alt="Better Than the Movies">
+                <div class="book-info">
+                <h3>Better Than the Movies</h3>
+                <p>Lynn Painter</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A psychological thriller filled with shocking twists, where nothing is as it seems in a tangled web of lies and betrayal.">
+                <img src="images/behind-her-eyes.jpg" alt="Behind Her Eyes">
+                <div class="book-info">
+                <h3>Behind Her Eyes</h3>
+                <p>Sarah Pinborough</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+
+            <div class="book-card" data-description="A captivating tale of love, loss, and self-discovery set against the backdrop of long, mysterious northern nights.">
+                <img src="images/white-nights.png" alt="White Nights">
+                <div class="book-info">
+                <h3>White Nights</h3>
+                <p>Fyodor Dostoevsky</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+                <button class="want-to-read">Want to Read</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About BookVerse</h3>
+                <p>Your one-stop online bookstore for all genres, from timeless classics to modern thrillers.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe for updates and book recommendations.</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 BookVerse. All rights reserved. Created by Ditsa Bakshi.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
