@@ -1,6 +1,6 @@
 # Project Name
 
-**BookCart - Your Next Reads**
+**BookVerse - Your Next Reads**
 
 ## **Description**
 
