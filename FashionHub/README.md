@@ -123,5 +123,3 @@ FashionHub/
 ✨ Built with ❤️ by \[Ditsa Bakshi(Student)]
 
 ---
-
-Would you like me to also **design a fancy banner (with your gradient theme: pink + purple aesthetic)** that you can place at the top of the README so it looks more professional on GitHub?
