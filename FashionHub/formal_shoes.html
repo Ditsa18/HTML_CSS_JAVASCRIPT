@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formal Shoes – FashionHub</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="substyle.css" />
+  <script src="https://kit.fontawesome.com/3b5b9a5d8b.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+  <!-- Top Row -->
+  <div class="header-top">
+    <div class="logo">
+      <img src="images/favicon.png" alt="FashionHub Logo">
+      <h1>FashionHub</h1>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search for products...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="cart" onclick="toggleCart()">
+      <span class="cart-text">Cart</span>
+  <i class="fas fa-shopping-cart"></i>
+  <span id="cart-count">0</span>
+</div>
+  </div>
+
+  <!-- Bottom Row (Navbar) -->
+  <nav class="navbar">
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
+    <a href="kids.html">Kids</a>
+    <a href="#contact">Contact</a> 
+  </nav>
+</header>
+
+
+
+  <main class="catalog">
+    <div class="section-top"><h2>Formal Shoes</h2></div>
+    <div class="grid">
+      <!-- 12 shoes -->
+        <article class="card"><img src="images/formal1.jpeg" alt="Formal Shoes"><h3>Classic Black Oxfords</h3><p class="price">₹3,499</p><button class="add-btn" onclick="addToCart('Classic Black Oxfords', 3499, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/formal2.jpeg" alt="Formal Shoes"><h3>Brown Leather Derbies</h3><p class="price">₹3,199</p><button class="add-btn" onclick="addToCart('Brown Leather Derbies', 3199, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/formal3.jpeg" alt="Formal Shoes"><h3>Tan Brogue Shoes</h3><p class="price">₹3,799</p><button class="add-btn" onclick="addToCart('Tan Brogue Shoes', 3799, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/formal4.jpeg" alt="Formal Shoes"><h3>Black Monk Strap Shoes</h3><p class="price">₹4,099</p><button class="add-btn" onclick="addToCart('Black Monk Strap Shoes', 4099, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/formal5.jpeg" alt="Formal Shoes"><h3>Brown Loafers</h3><p class="price">₹2,999</p><button class="add-btn" onclick="addToCart('Brown Loafers', 2999, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/formal6.jpeg" alt="Formal Shoes"><h3>Glossy Black Formal Shoes</h3><p class="price">₹3,599</p><button class="add-btn" onclick="addToCart('Glossy Black Formal Shoes', 3599, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/formal7.jpeg" alt="Formal Shoes"><h3>Tan Slip-On Formal Shoes</h3><p class="price">₹3,299</p><button class="add-btn" onclick="addToCart('Tan Slip-On Formal Shoes', 3299, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/formal8.jpeg" alt="Formal Shoes"><h3>Brown Wingtip Brogues</h3><p class="price">₹3,899</p><button class="add-btn" onclick="addToCart('Brown Wingtip Brogues', 3899, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/formal9.jpeg" alt="Formal Shoes"><h3>Black Patent Leather Shoes</h3><p class="price">₹4,299</p><button class="add-btn" onclick="addToCart('Black Patent Leather Shoes', 4299, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/formal10.jpeg" alt="Formal Shoes"><h3>Brown Tassel Loafers</h3><p class="price">₹3,499</p><button class="add-btn" onclick="addToCart('Brown Tassel Loafers', 3499, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/formal11.jpeg" alt="Formal Shoes"><h3>Black Lace-Up Formals</h3><p class="price">₹2,899</p><button class="add-btn" onclick="addToCart('Black Lace-Up Formals', 2899, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/formal12.jpeg" alt="Formal Shoes"><h3>Brown Double Monk Shoes</h3><p class="price">₹4,099</p><button class="add-btn" onclick="addToCart('Brown Double Monk Shoes', 4099, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+</div>
+  </main>
+  <aside id="cart-panel" class="cart-panel"><div class="cart-header"><h3>Your Cart</h3><button class="icon-btn" onclick="toggleCart()"><i class="fas fa-times"></i></button></div><ul id="cart-items" class="cart-items"></ul><div class="cart-foot"><div id="cart-total" class="total">Total: ₹0</div><button class="btn-primary w100">Checkout</button></div></aside>
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Brand / About -->
+    <div class="footer-col">
+      <h3>FashionHub</h3>
+      <p>Your go-to destination for the latest trends in fashion. Stylish, affordable, and made for everyone.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Service -->
+    <div class="footer-col">
+      <h4>Customer Service</h4>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-col">
+      <h4>Stay Updated</h4>
+      <p>Subscribe to our newsletter for exclusive offers and fashion tips.</p>
+      <form class="newsletter">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 FashionHub. All Rights Reserved. Created by Ditsa Bakshi.</p>
+  </div>
+</footer>
+</body>
+</html>

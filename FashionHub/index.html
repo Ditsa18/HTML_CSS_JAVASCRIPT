@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FashionHub – Trendy Styles for Everyone</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/3b5b9a5d8b.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  
+<!-- Header -->
+<header>
+  <div class="header-top">
+    <div class="logo">
+      <img src="images/favicon.png" alt="FashionHub Logo">
+      <span>FashionHub</span>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search for products...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="cart-btn" onclick="toggleCart()">
+      <span class="cart-text">Cart</span>
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-count">0</span>
+    </div>
+  </div>
+
+  <!--Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#women">Women</a></li>
+      <li><a href="#men">Men</a></li>
+      <li><a href="#kids">Kids</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Step Into Style</h1>
+    <p>Discover the latest trends in fashion for Women, Men & Kids</p>
+    <a href="#collections" class="btn">Shop Now</a>
+  </div>
+</section>
+
+  <!-- Discover Ribbon -->
+  <section id="discover" class="ribbon">
+    <p><i class="fas fa-star"></i> Handpicked trends • Free shipping over ₹999 • Easy returns</p>
+  </section>
+
+  <!-- WOMEN -->
+  <section id="women" class="catalog">
+    <div class="section-top">
+      <h2>Women</h2>
+      <a class="see-all" href="dresses.html">Shop from Women's Collection</a>
+    </div>
+    <div class="product-container">
+      <article class="card">
+        <img src="images/fashion1.jpg" alt="Elegant red dress" />
+        <h3>Elegant Dress</h3>
+        <p class="price">₹2,499</p>
+        <button class="add-btn" onclick="addToCart('Elegant Dress', 2499, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="dresses.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion2.jpeg" alt="Pastel flowy dress" />
+        <h3>Pastel Flowy Dress</h3>
+        <p class="price">₹1,899</p>
+        <button class="add-btn" onclick="addToCart('Pastel Flowy Dress', 1899, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="dresses.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion3.jpeg" alt="Kurta set" />
+        <h3>Kurta Set</h3>
+        <p class="price">₹1,999</p>
+        <button class="add-btn" onclick="addToCart('Kurta Set', 1999, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="kurtas.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion4.jpeg" alt="Trendy top" />
+        <h3>Trendy Top</h3>
+        <p class="price">₹999</p>
+        <button class="add-btn" onclick="addToCart('Trendy Top', 999, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="tops.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion5.jpeg" alt="Floral dress" />
+        <h3>Floral Midi Dress</h3>
+        <p class="price">₹1,499</p>
+        <button class="add-btn" onclick="addToCart('Floral Midi Dress', 1499, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="dresses.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion6.jpeg" alt="Heels" />
+        <h3>Block Heels</h3>
+        <p class="price">₹1,299</p>
+        <button class="add-btn" onclick="addToCart('Block Heels', 1299, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="heels.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion7.jpeg" alt="Kurti" />
+        <h3>Printed Kurti</h3>
+        <p class="price">₹1,199</p>
+        <button class="add-btn" onclick="addToCart('Printed Kurti', 1199, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="kurtas.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion8.jpeg" alt="Sneakers" />
+        <h3>White Sneakers</h3>
+        <p class="price">₹2,299</p>
+        <button class="add-btn" onclick="addToCart('White Sneakers', 2299, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="sneakers.html">See More</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- MEN -->
+  <section id="men" class="catalog">
+    <div class="section-top">
+      <h2>Men</h2>
+      <a class="see-all" href="shirts.html">Shop from Men's Collection</a>
+    </div>
+    <div class="product-container">
+      <article class="card">
+        <img src="images/fashion9.jpeg" alt="Casual shirt" />
+        <h3>Casual Shirt</h3>
+        <p class="price">₹1,499</p>
+        <button class="add-btn" onclick="addToCart('Casual Shirt', 1499, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="shirts.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion10.jpeg" alt="Denim jacket" />
+        <h3>Denim Jacket</h3>
+        <p class="price">₹2,999</p>
+        <button class="add-btn" onclick="addToCart('Denim Jacket', 2999, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="denims.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion11.jpeg" alt="Running shoes" />
+        <h3>Running Shoes</h3>
+        <p class="price">₹2,499</p>
+        <button class="add-btn" onclick="addToCart('Running Shoes', 2499, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="shoes.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion12.jpeg" alt="Formal shoes" />
+        <h3>Formal Shoes</h3>
+        <p class="price">₹2,199</p>
+        <button class="add-btn" onclick="addToCart('Formal Shoes', 2199, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="formal_shoes.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion13.jpeg" alt="Kurta" />
+        <h3>Men's Kurta</h3>
+        <p class="price">₹1,799</p>
+        <button class="add-btn" onclick="addToCart('Men\'s Kurta', 1799, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="kurtas_men.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion14.jpeg" alt="T-shirt" />
+        <h3>Graphic Tee</h3>
+        <p class="price">₹799</p>
+        <button class="add-btn" onclick="addToCart('Graphic Tee', 799, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="tees.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion15.jpeg" alt="Sneakers" />
+        <h3>Canvas Sneakers</h3>
+        <p class="price">₹1,899</p>
+        <button class="add-btn" onclick="addToCart('Canvas Sneakers', 1899, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="shoes.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion16.jpeg" alt="Leather jacket" />
+        <h3>Leather Jacket</h3>
+        <p class="price">₹4,499</p>
+        <button class="add-btn" onclick="addToCart('Leather Jacket', 4499, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="jackets.html">See More</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- KIDS -->
+  <section id="kids" class="catalog">
+    <div class="section-top">
+      <h2>Kids</h2>
+      <a class="see-all" href="kdress.html">Shop from Kids' Collection</a>
+    </div>
+    <div class="product-container">
+      <article class="card">
+        <img src="images/fashion17.jpeg" alt="Kid dress" />
+        <h3>Kids Dress</h3>
+        <p class="price">₹1,199</p>
+        <button class="add-btn" onclick="addToCart('Kid Dress', 1199, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="kdress.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion18.jpeg" alt="Kids t-shirt" />
+        <h3>Kids T‑Shirt</h3>
+        <p class="price">₹799</p>
+        <button class="add-btn" onclick="addToCart('Kids T‑Shirt', 799, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="ktees.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion19.jpeg" alt="Kids shoes" />
+        <h3>Kids Shoes</h3>
+        <p class="price">₹999</p>
+        <button class="add-btn" onclick="addToCart('Kids Shoes', 999, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="kshoes.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion20.jpeg" alt="Kids sweater" />
+        <h3>Kids Sweater</h3>
+        <p class="price">₹1,299</p>
+        <button class="add-btn" onclick="addToCart('Kids Sweater', 1299, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="kwinter.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion21.jpeg" alt="Dungarees" />
+        <h3>Dungarees</h3>
+        <p class="price">₹1,099</p>
+        <button class="add-btn" onclick="addToCart('Dungarees', 1099, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="koveralls.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion22.jpeg" alt="Kids hoodie" />
+        <h3>Kids Hoodie</h3>
+        <p class="price">₹1,099</p>
+        <button class="add-btn" onclick="addToCart('Kids Hoodie', 1099, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="kwinter.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion23.jpeg" alt="Kids shorts" />
+        <h3>Kids Shorts</h3>
+        <p class="price">₹699</p>
+        <button class="add-btn" onclick="addToCart('Kids Shorts', 699, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="kshorts.html">See More</a>
+      </article>
+      <article class="card">
+        <img src="images/fashion24.jpeg" alt="Kids sandals" />
+        <h3>Kids Sandals</h3>
+        <p class="price">₹799</p>
+        <button class="add-btn" onclick="addToCart('Kids Sandals', 799, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        <a class="see-more" href="kshoes.html">See More</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Side Cart Panel -->
+  <aside id="cart-panel" class="cart-panel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" onclick="toggleCart()"><i class="fas fa-times"></i></button>
+    </div>
+    <ul id="cart-items" class="cart-items"></ul>
+    <div class="cart-foot">
+      <div id="cart-total" class="total">Total: ₹0</div>
+      <button class="btn-primary w100">Checkout</button>
+    </div>
+  </aside>
+
+<!-- Footer -->
+  <footer class="footer">
+    <section id="contact" class="catalog"></section>
+  <div class="footer-container">
+    
+    <!-- Brand / About -->
+    <div class="footer-col">
+      <h3>FashionHub</h3>
+      <p>Your go-to destination for the latest trends in fashion. Stylish, affordable, and made for everyone.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Service -->
+    <div class="footer-col">
+      <h4>Customer Service</h4>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-col">
+      <h4>Stay Updated</h4>
+      <p>Subscribe to our newsletter for exclusive offers and fashion tips.</p>
+      <form class="newsletter">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 FashionHub. All Rights Reserved. Created by Ditsa Bakshi.</p>
+  </div>
+</footer>
+</body>
+</html>
+

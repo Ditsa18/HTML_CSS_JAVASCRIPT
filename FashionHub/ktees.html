@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tees for Kids – FashionHub</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="substyle.css" />
+  <script src="https://kit.fontawesome.com/3b5b9a5d8b.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+  <!-- Top Row -->
+  <div class="header-top">
+    <div class="logo">
+      <img src="images/favicon.png" alt="FashionHub Logo">
+      <h1>FashionHub</h1>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search for products...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="cart" onclick="toggleCart()">
+      <span class="cart-text">Cart</span>
+  <i class="fas fa-shopping-cart"></i>
+  <span id="cart-count">0</span>
+</div>
+  </div>
+
+  <!-- Bottom Row (Navbar) -->
+  <nav class="navbar">
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
+    <a href="kids.html">Kids</a>
+    <a href="#contact">Contact</a> 
+  </nav>
+</header>
+
+
+
+  <main class="catalog">
+    <div class="section-top"><h2>Cute Tees for Kids</h2></div>
+    <div class="grid">
+       <article class="card"><img src="images/ktee1.jpeg" alt="Kids Tee"><h3>Superhero Print Tee</h3><p class="price">₹599</p><button class="add-btn" onclick="addToCart('Superhero Print Tee', 599, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/ktee2.jpeg" alt="Kids Tee"><h3>Cartoon Graphic Tee</h3><p class="price">₹499</p><button class="add-btn" onclick="addToCart('Cartoon Graphic Tee', 499, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/ktee3.jpeg" alt="Kids Tee"><h3>Striped Cotton Tee</h3><p class="price">₹449</p><button class="add-btn" onclick="addToCart('Striped Cotton Tee', 449, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/ktee4.jpeg" alt="Kids Tee"><h3>Printed Sports Tee</h3><p class="price">₹699</p><button class="add-btn" onclick="addToCart('Printed Sports Tee', 699, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/ktee5.jpeg" alt="Kids Tee"><h3>Blue Polo Tee</h3><p class="price">₹799</p><button class="add-btn" onclick="addToCart('Blue Polo Tee', 799, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/ktee6.jpeg" alt="Kids Tee"><h3>Animal Print Tee</h3><p class="price">₹549</p><button class="add-btn" onclick="addToCart('Animal Print Tee', 549, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/ktee7.jpeg" alt="Kids Tee"><h3>Yellow Smiley Tee</h3><p class="price">₹399</p><button class="add-btn" onclick="addToCart('Yellow Smiley Tee', 399, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/ktee8.jpeg" alt="Kids Tee"><h3>Space Print Tee</h3><p class="price">₹649</p><button class="add-btn" onclick="addToCart('Space Print Tee', 649, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/ktee9.jpeg" alt="Kids Tee"><h3>Red Logo Tee</h3><p class="price">₹499</p><button class="add-btn" onclick="addToCart('Red Logo Tee', 499, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/ktee10.jpeg" alt="Kids Tee"><h3>Green Sports Tee</h3><p class="price">₹699</p><button class="add-btn" onclick="addToCart('Green Sports Tee', 699, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/ktee11.jpeg" alt="Kids Tee"><h3>White Classic Tee</h3><p class="price">₹449</p><button class="add-btn" onclick="addToCart('White Classic Tee', 449, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/ktee12.jpeg" alt="Kids Tee"><h3>Black Cool Print Tee</h3><p class="price">₹599</p><button class="add-btn" onclick="addToCart('Black Cool Print Tee', 599, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+</div>
+  </main>
+  <aside id="cart-panel" class="cart-panel"><div class="cart-header"><h3>Your Cart</h3><button class="icon-btn" onclick="toggleCart()"><i class="fas fa-times"></i></button></div><ul id="cart-items" class="cart-items"></ul><div class="cart-foot"><div id="cart-total" class="total">Total: ₹0</div><button class="btn-primary w100">Checkout</button></div></aside>
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Brand / About -->
+    <div class="footer-col">
+      <h3>FashionHub</h3>
+      <p>Your go-to destination for the latest trends in fashion. Stylish, affordable, and made for everyone.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Service -->
+    <div class="footer-col">
+      <h4>Customer Service</h4>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-col">
+      <h4>Stay Updated</h4>
+      <p>Subscribe to our newsletter for exclusive offers and fashion tips.</p>
+      <form class="newsletter">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 FashionHub. All Rights Reserved. Created by Ditsa Bakshi.</p>
+  </div>
+</footer>
+</body>
+</html>

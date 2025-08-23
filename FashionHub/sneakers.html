@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sneakers – FashionHub</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="substyle.css" />
+  <script src="https://kit.fontawesome.com/3b5b9a5d8b.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header>
+  <!-- Top Row -->
+  <div class="header-top">
+    <div class="logo">
+      <img src="images/favicon.png" alt="FashionHub Logo">
+      <h1>FashionHub</h1>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search for products...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="cart" onclick="toggleCart()">
+      <span class="cart-text">Cart</span>
+  <i class="fas fa-shopping-cart"></i>
+  <span id="cart-count">0</span>
+</div>
+  </div>
+
+  <!-- Bottom Row (Navbar) -->
+  <nav class="navbar">
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
+    <a href="kids.html">Kids</a>
+    <a href="#contact">Contact</a> 
+  </nav>
+</header>
+
+
+
+  <main class="catalog">
+    <div class="section-top"><h2>Dashing Sneakers</h2></div>
+    <div class="grid">
+      <!-- 12 sneakers -->
+        <article class="card"><img src="images/sneakers1.jpeg" alt="Sneakers"><h3>Classic White Sneakers</h3><p class="price">₹2,499</p><button class="add-btn" onclick="addToCart('Classic White Sneakers', 2499, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/sneakers2.jpeg" alt="Sneakers"><h3>Black Chunky Sneakers</h3><p class="price">₹3,199</p><button class="add-btn" onclick="addToCart('Black Chunky Sneakers', 3199, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/sneakers3.jpeg" alt="Sneakers"><h3>Pastel Pink Sneakers</h3><p class="price">₹2,299</p><button class="add-btn" onclick="addToCart('Pastel Pink Sneakers', 2299, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/sneakers4.jpeg" alt="Sneakers"><h3>Blue Denim Sneakers</h3><p class="price">₹1,999</p><button class="add-btn" onclick="addToCart('Blue Denim Sneakers', 1999, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/sneakers5.jpeg" alt="Sneakers"><h3>Grey Sports Sneakers</h3><p class="price">₹2,799</p><button class="add-btn" onclick="addToCart('Grey Sports Sneakers', 2799, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/sneakers6.jpeg" alt="Sneakers"><h3>Neon Green Sneakers</h3><p class="price">₹3,499</p><button class="add-btn" onclick="addToCart('Neon Green Sneakers', 3499, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/sneakers7.jpeg" alt="Sneakers"><h3>Beige Casual Sneakers</h3><p class="price">₹1,899</p><button class="add-btn" onclick="addToCart('Beige Casual Sneakers', 1899, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/sneakers8.jpeg" alt="Sneakers"><h3>Printed Trendy Sneakers</h3><p class="price">₹2,599</p><button class="add-btn" onclick="addToCart('Printed Trendy Sneakers', 2599, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/sneakers9.jpeg" alt="Sneakers"><h3>Silver Metallic Sneakers</h3><p class="price">₹3,299</p><button class="add-btn" onclick="addToCart('Silver Metallic Sneakers', 3299, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/sneakers10.jpeg" alt="Sneakers"><h3>Brown Leather Sneakers</h3><p class="price">₹2,199</p><button class="add-btn" onclick="addToCart('Brown Leather Sneakers', 2199, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/sneakers11.jpeg" alt="Sneakers"><h3>Yellow High-Top Sneakers</h3><p class="price">₹2,899</p><button class="add-btn" onclick="addToCart('Yellow High-Top Sneakers', 2899, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+        <article class="card"><img src="images/sneakers12.jpeg" alt="Sneakers"><h3>Maroon Street Sneakers</h3><p class="price">₹2,099</p><button class="add-btn" onclick="addToCart('Maroon Street Sneakers', 2099, this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></article>
+
+    </div>
+  </main>
+  <aside id="cart-panel" class="cart-panel"><div class="cart-header"><h3>Your Cart</h3><button class="icon-btn" onclick="toggleCart()"><i class="fas fa-times"></i></button></div><ul id="cart-items" class="cart-items"></ul><div class="cart-foot"><div id="cart-total" class="total">Total: ₹0</div><button class="btn-primary w100">Checkout</button></div></aside>
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Brand / About -->
+    <div class="footer-col">
+      <h3>FashionHub</h3>
+      <p>Your go-to destination for the latest trends in fashion. Stylish, affordable, and made for everyone.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Service -->
+    <div class="footer-col">
+      <h4>Customer Service</h4>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-col">
+      <h4>Stay Updated</h4>
+      <p>Subscribe to our newsletter for exclusive offers and fashion tips.</p>
+      <form class="newsletter">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 FashionHub. All Rights Reserved. Created by Ditsa Bakshi.</p>
+  </div>
+</footer>
+</body>
+</html>
