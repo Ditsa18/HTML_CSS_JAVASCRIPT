@@ -23,15 +23,13 @@ Easily add, edit, mark complete, and delete tasks — with **persistent storage 
 
 ### 🌙 Dark Theme
 
+<img width="650" height="403" alt="Screenshot 2025-09-17 184619" src="https://github.com/user-attachments/assets/b83ff4ee-3993-469a-9e63-aaa338558644" />
 
-![Dark Theme](<img width="650" height="403" alt="Screenshot 2025-09-17 184619" src="https://github.com/user-attachments/assets/3b52765d-58f9-49f1-913d-bf71a0f8232f" />
-)
 
 ### ☀️ Light Theme
 
+<img width="673" height="431" alt="Screenshot 2025-09-17 184510" src="https://github.com/user-attachments/assets/e8783bf6-c518-492b-bc80-8b830afd1ba1" />
 
-![Light Theme](<img width="673" height="431" alt="Screenshot 2025-09-17 184510" src="https://github.com/user-attachments/assets/dfb41bb0-a594-4ced-b059-b11d04911e03" />
-)
 
 ---
 
